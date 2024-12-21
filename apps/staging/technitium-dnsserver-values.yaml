@@ -13,7 +13,7 @@ spec:
     ingress:
       main:
         hosts:
-          - host: technitium-dnsserver.staging.home.local
+          - host: technitium.staging.home.local
             paths:
               - path: /
                 pathType: Prefix
