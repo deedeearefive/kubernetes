@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: technitium-dnsserver
+  namespace: technitium-dnsserver
+spec:
+  releaseName: technitium-dnsserver
+  chart:
+    spec:
+      chart: technitium-dnsserver
+      sourceRef:
+        kind: HelmRepository
+        name: technitium-dnsserver
+  interval: 1m
+  install:
+    remediation:
+      retries: 3
+  # Default values
+  values:
+    ingress:
+      main:
+        enabled: true
