@@ -16,7 +16,7 @@ spec:
     remediation:
       retries: 3
   # Default values
-  values:
-    ingress:
-      main:
-        enabled: true
+  #values:
+  #  ingress:
+  #    main:
+  #      enabled: true
