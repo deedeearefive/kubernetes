@@ -3,4 +3,5 @@ kind: Namespace
 metadata:
   name: openebs
   labels:
+    pod-security.kubernetes.io/enforce: privileged
     toolkit.fluxcd.io/tenant: dev-team
