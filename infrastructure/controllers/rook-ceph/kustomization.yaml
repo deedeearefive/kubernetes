@@ -4,5 +4,5 @@ namespace: rook-ceph
 resources:
   - namespace.yaml
   - repository.yaml
-  - release_operator.yaml
+  #- release_operator.yaml
   #- release_cluster.yaml
