@@ -5,4 +5,4 @@ resources:
   - namespace.yaml
   - repository.yaml
   - release_operator.yaml
-  - release_cluster.yaml
+  #- release_cluster.yaml
