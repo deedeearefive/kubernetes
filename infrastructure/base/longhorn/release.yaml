@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: longhorn-release
+  namespace: longhorn-system
+spec:
+  releaseName: longhorn-release
+  chart:
+    spec:
+      chart: longhorn
+      sourceRef:
+        kind: HelmRepository
+        name: longhorn-repo
+  interval: 1m
+  install:
+    remediation:
+      retries: 3
+  # Default values
+  values:
+    ingress:
+      main:
+        enabled: true
