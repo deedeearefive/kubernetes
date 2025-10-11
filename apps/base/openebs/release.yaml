@@ -10,7 +10,7 @@ spec:
       chart: openebs
       sourceRef:
         kind: HelmRepository
-        name: openeb
+        name: openebs
   interval: 1m
   install:
     remediation:
