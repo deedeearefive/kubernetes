@@ -4,6 +4,6 @@ namespace: technitium-dnsserver
 resources:
   - ../base/technitium-dnsserver
 patches:
-  - path: technitium-dnsserver-values.yaml
+  - path: technitium-dnsserver-patch.yaml
     target:
       kind: HelmRelease
