@@ -9,15 +9,15 @@ spec:
       version: ">=4.3.3"
   test:
     enable: false
-  # values:
-    # mayastor:
-    # csi:
-    #   node:
-    #     initContainers:
-    #       enabled: false
-    # engines:
-    #   local:
-    #     lvm:
-    #       enabled: false
-    #     zfs:
-    #       enabled: false
+  values:
+    mayastor:
+    csi:
+      node:
+        initContainers:
+          enabled: false
+    engines:
+      local:
+        lvm:
+          enabled: false
+        zfs:
+          enabled: false
