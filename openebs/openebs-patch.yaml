@@ -13,8 +13,10 @@ spec:
     mayastor:
     csi:
       node:
+        # We don't want initContainters for Talos linux
         initContainers:
           enabled: false
+    # We don't need local LVM engines
     engines:
       local:
         lvm:
