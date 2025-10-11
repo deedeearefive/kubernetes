@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
-  name: technitium-dnsserver-repo
+  name: technitium-dnsserver
   namespace: technitium-dnsserver
 spec:
   interval: 1m
