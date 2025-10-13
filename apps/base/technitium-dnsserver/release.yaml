@@ -12,6 +12,8 @@ spec:
         kind: HelmRepository
         name: technitium-dnsserver
   interval: 1m
+  driftDetection:
+    mode: enabled
   install:
     remediation:
       retries: 3
