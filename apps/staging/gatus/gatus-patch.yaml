@@ -10,6 +10,13 @@ spec:
   test:
     enable: false
   values:
+    service:
+      type: LoadBalancer
+      port: 80
+      portName: http
+      targetPort: 8080
+      annotations: {}
+      labels: {}
     ingress:
       main:
         hosts:
