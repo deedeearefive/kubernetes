@@ -7,3 +7,6 @@ patches:
   - path: rook-ceph-patch.yaml
     target:
       kind: HelmRelease
+  - path: rook-ceph-cluster-patch.yaml
+    target:
+      kind: HelmRelease
