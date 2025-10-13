@@ -24,4 +24,10 @@ spec:
             paths:
               - path: /
                 pathType: Prefix
-
+    config:
+      endpoints:
+        - name: Technitium
+          url: https://technitium.staging.home.local
+          interval: 60s
+          conditions:
+            - "[STATUS] == 200"
