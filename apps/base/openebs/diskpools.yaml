@@ -1,0 +1,9 @@
+---
+apiVersion: "openebs.io/v1beta3"
+kind: DiskPool
+metadata:
+  name: staging-cp-0-pool
+  namespace: openebs
+spec:
+  node: staging-cp-0
+  disks: ["/dev/vdb"]
