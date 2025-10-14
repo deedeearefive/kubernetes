@@ -1,3 +1,4 @@
+---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
@@ -11,11 +12,11 @@ spec:
     enable: false
   values:
     mayastor:
-    csi:
-      node:
-        # We don't want initContainters for Talos linux
-        initContainers:
-          enabled: false
+      csi:
+        node:
+          # We don't want initContainters for Talos linux
+          initContainers:
+            enabled: false
     # We don't need local LVM engines
     engines:
       local:
@@ -23,3 +24,12 @@ spec:
           enabled: false
         zfs:
           enabled: false
+---
+apiVersion: "openebs.io/v1beta3"
+kind: DiskPool
+metadata:
+  name: staging-cp-0-pool
+  namespace: openebs
+spec:
+  node: staging-cp-0
+  disks: ["/dev/vdb"]
