@@ -7,3 +7,21 @@ metadata:
 spec:
   node: staging-cp-0
   disks: ["/dev/vdb"]
+---
+apiVersion: "openebs.io/v1beta3"
+kind: DiskPool
+metadata:
+  name: staging-worker-0-pool
+  namespace: openebs
+spec:
+  node: staging-worker-0
+  disks: ["/dev/vdb"]
+---
+apiVersion: "openebs.io/v1beta3"
+kind: DiskPool
+metadata:
+  name: staging-worker-1-pool
+  namespace: openebs
+spec:
+  node: staging-worker-1
+  disks: ["/dev/vdb"]
