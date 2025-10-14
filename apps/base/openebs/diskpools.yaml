@@ -6,7 +6,7 @@ metadata:
   namespace: openebs
 spec:
   node: staging-cp-0
-  disks: ["/dev/vdb"]
+  disks: ["aio:///dev/disk/by-path/virtio-pci-0000:00:0b.0"]
 ---
 apiVersion: "openebs.io/v1beta3"
 kind: DiskPool
