@@ -6,7 +6,7 @@ metadata:
   namespace: openebs
 spec:
   node: staging-cp-0
-  disks: ["/dev/vdb"]
+  disks: ["/dev/vdb?blk_size=4096"]
 ---
 apiVersion: "openebs.io/v1beta3"
 kind: DiskPool
@@ -15,7 +15,7 @@ metadata:
   namespace: openebs
 spec:
   node: staging-worker-0
-  disks: ["/dev/vdb"]
+  disks: ["/dev/vdb?blk_size=4096"]
 ---
 apiVersion: "openebs.io/v1beta3"
 kind: DiskPool
@@ -24,4 +24,4 @@ metadata:
   namespace: openebs
 spec:
   node: staging-worker-1
-  disks: ["/dev/vdb"]
+  disks: ["/dev/vdb?blk_size=4096"]
