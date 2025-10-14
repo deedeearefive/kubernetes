@@ -24,3 +24,4 @@ spec:
           enabled: false
         zfs:
           enabled: false
+    coreList: [1,2]
