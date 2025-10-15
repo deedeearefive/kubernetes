@@ -1,3 +1,4 @@
+# One diskpool per node. Minimum of three (equal to IO engine count) to allow for replication factor of 3.
 ---
 apiVersion: "openebs.io/v1beta3"
 kind: DiskPool
@@ -6,6 +7,8 @@ metadata:
   namespace: openebs
 spec:
   node: staging-cp-0
+  # talosctl -n <node> get disk vdb -o yaml
+  # Check symlinks. Using just /dev/vdb will not work.
   disks: ["aio:///dev/disk/by-path/virtio-pci-0000:00:0b.0"]
 ---
 apiVersion: "openebs.io/v1beta3"
@@ -15,6 +18,8 @@ metadata:
   namespace: openebs
 spec:
   node: staging-worker-0
+  # talosctl -n <node> get disk vdb -o yaml
+  # Check symlinks. Using just /dev/vdb will not work.
   disks: ["aio:///dev/disk/by-path/virtio-pci-0000:00:0b.0"]
 ---
 apiVersion: "openebs.io/v1beta3"
@@ -24,4 +29,6 @@ metadata:
   namespace: openebs
 spec:
   node: staging-worker-1
+  # talosctl -n <node> get disk vdb -o yaml
+  # Check symlinks. Using just /dev/vdb will not work.
   disks: ["aio:///dev/disk/by-path/virtio-pci-0000:00:0b.0"]
