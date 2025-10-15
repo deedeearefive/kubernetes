@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: rook-ceph
-  labels:
-    toolkit.fluxcd.io/tenant: dev-team
-    pod-security.kubernetes.io/enforce: privileged
