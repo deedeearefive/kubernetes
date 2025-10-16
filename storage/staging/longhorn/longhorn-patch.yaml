@@ -11,7 +11,11 @@ spec:
   test:
     enable: false
   values:
+    service:
+      ui:
+        type: LoadBalancer
     ingress:
+      enabled: true
       main:
         hosts:
           - host: longhorn.staging.home.local
