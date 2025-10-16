@@ -11,3 +11,10 @@ spec:
   test:
     enable: false
   values:
+    ingress:
+      main:
+        hosts:
+          - host: longhorn.staging.home.local
+            paths:
+              - path: /
+                pathType: Prefix
