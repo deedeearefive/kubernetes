@@ -16,8 +16,7 @@ spec:
         type: LoadBalancer
     ingress:
       enabled: true
-      hosts:
-        - host: longhorn.staging.home.local
-          paths:
-            - path: /
-              pathType: Prefix
+      host: longhorn.staging.home.local
+      paths:
+      path: /
+      pathType: Prefix
