@@ -11,6 +11,9 @@ spec:
   test:
     enable: false
   values:
+    longhorn:
+      nodeSelector:
+        storage: "longhorn"
     service:
       ui:
         type: LoadBalancer
