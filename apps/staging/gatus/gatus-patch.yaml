@@ -27,7 +27,7 @@ spec:
     config:
       endpoints:
         - name: Technitium
-          url: https://technitium.staging.home.local
+          url: technitium.staging.home.local:53
           interval: 60s
           conditions:
             - "[STATUS] == 200"
