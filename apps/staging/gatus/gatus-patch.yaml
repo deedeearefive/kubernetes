@@ -27,7 +27,7 @@ spec:
     config:
       endpoints:
         - name: Technitium
-          url: gatus.gatus.svc.cluster.local
+          url: tcp://gatus.gatus.svc.cluster.local
           interval: 60s
           conditions:
             - "[STATUS] == 200"
