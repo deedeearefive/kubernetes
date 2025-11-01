@@ -27,7 +27,7 @@ spec:
     config:
       endpoints:
         - name: Technitium
-          url: https://technitium-dnsserver.technitium-dnsserver.svc.cluster.local
+          url: technitium-dnsserver.technitium-dnsserver.svc.cluster.local
           interval: 60s
           conditions:
             - "[STATUS] == 200"
