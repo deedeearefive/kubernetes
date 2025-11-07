@@ -20,7 +20,7 @@ spec:
         storage: "longhorn"
     ingress:
       enabled: true
-      host: lh.home.local
+      host: longhorh.home.local
       paths:
       path: /
       pathType: Prefix
