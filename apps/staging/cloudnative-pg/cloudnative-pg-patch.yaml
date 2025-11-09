@@ -9,9 +9,3 @@ spec:
     spec:
       version: ">=0.26.1"
   values:
-    ingress:
-      enabled: true
-      host: cloudnative-pg.home.local
-      paths:
-      path: /
-      pathType: Prefix
