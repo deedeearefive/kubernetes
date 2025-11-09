@@ -4,7 +4,6 @@ namespace: immich
 resources:
   - ../../base/immich
   - ./immich-pvc-photos.yaml
-  - ./immich-pvc-cache.yaml
 patches:
   - path: immich-patch.yaml
     target:
