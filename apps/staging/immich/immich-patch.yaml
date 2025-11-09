@@ -42,9 +42,6 @@ spec:
           enabled: true
           hosts:
             - host: immich.home.local
-              paths:
-              path: /
-              pathType: Prefix
     valkey:
       enabled: true
       persistence:
