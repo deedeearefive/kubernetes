@@ -12,7 +12,7 @@ spec:
     immich:
       persistence:
         library:
-          existingClaim: immich-pvc
+          existingClaim: immich-photos
     ingress:
       enabled: true
       host: immich.home.local
