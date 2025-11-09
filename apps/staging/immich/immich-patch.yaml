@@ -42,6 +42,10 @@ spec:
           enabled: true
           hosts:
             - host: immich.home.local
+              paths:
+              - path: "/"
+                service:
+                  identifier: main
     valkey:
       enabled: true
       persistence:
