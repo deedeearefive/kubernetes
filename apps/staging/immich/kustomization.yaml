@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: immich
 resources:
   - ../../base/immich
+  - ./immich-pvc.yaml
 patches:
   - path: immich-patch.yaml
     target:
