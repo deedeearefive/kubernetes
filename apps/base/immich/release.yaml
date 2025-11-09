@@ -1,10 +1,10 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: immich-release
+  name: immich
   namespace: immich
 spec:
-  releaseName: immich-release
+  releaseName: immich
   chart:
     spec:
       chart: immich
