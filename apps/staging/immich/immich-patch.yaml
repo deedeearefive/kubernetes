@@ -19,3 +19,16 @@ spec:
       paths:
       path: /
       pathType: Prefix
+    valkey:
+      persistence:
+        data:
+          enabled: true
+          size: 1Gi
+          type: persistentVolumeClaim
+          accessMode: ReadWriteOnce
+    persistence:
+      cache:
+        enabled: true
+        size: 10Gi
+        type: persistentVolumeClaim
+        accessMode: ReadWriteMany

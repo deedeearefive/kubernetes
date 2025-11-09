@@ -1,0 +1,13 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgresql-storage-class
+spec:
+  # Application level replication
+  instances: 3
+  storage:
+    # We use the custom storageClass longhorn-rc1
+    # to have no longhorn replicas; as cloudnative-pg
+    # does application level replication
+    storageClass: longhorn-rc1
+    size: 1Gi

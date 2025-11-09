@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: longhorn-system
 resources:
   - ../../base/longhorn
+  - ./longhorn-rc1.yaml
 patches:
   - path: longhorn-patch.yaml
     target:
