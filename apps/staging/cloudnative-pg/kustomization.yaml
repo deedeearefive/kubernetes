@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: cnpg-system
 resources:
   - ../../base/cloudnative-pg
-  - ./cloudnative-pg-cluster.yaml
 patches:
   - path: cloudnative-pg-patch.yaml
     target:
