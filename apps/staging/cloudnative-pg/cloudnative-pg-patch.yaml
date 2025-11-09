@@ -1,0 +1,17 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: cloudnative-pg-release
+  namespace: cloudnative-pg
+spec:
+  chart:
+    spec:
+      version: ">=1.27.1"
+  values:
+    ingress:
+      enabled: true
+      host: cloudnative-pg.home.local
+      paths:
+      path: /
+      pathType: Prefix
