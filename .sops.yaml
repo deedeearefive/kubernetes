@@ -1,0 +1,6 @@
+creation_rules:
+  - path_regex: .*\.ya?ml
+    encrypted_regex: "^(data|stringData|secret|secureJsonData)$"
+    key_groups:
+      - age:
+        - age1x063t8d3lk76x44np5jq8rqpr4q740825xyh0xxwq5rh68wz5cvsul93vm
