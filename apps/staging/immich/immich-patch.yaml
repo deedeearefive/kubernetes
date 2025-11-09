@@ -40,10 +40,11 @@ spec:
       ingress:
         main:
           enabled: true
-          host: immich.home.local
-          paths:
-          path: /
-          pathType: Prefix
+          hosts:
+            - host: immich.home.local
+              paths:
+              path: /
+              pathType: Prefix
     valkey:
       enabled: true
       persistence:
