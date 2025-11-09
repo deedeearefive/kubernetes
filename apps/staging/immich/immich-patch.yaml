@@ -36,13 +36,14 @@ spec:
       persistence:
         library:
           existingClaim: immich-photos
-    ingress:
-      main:
-        enabled: true
-        host: immich.home.local
-        paths:
-        path: /
-        pathType: Prefix
+    server:
+      ingress:
+        main:
+          enabled: true
+          host: immich.home.local
+          paths:
+          path: /
+          pathType: Prefix
     valkey:
       enabled: true
       persistence:
