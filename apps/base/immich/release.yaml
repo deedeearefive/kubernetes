@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: immich-release
+  namespace: immich
+spec:
+  releaseName: immich-release
+  chart:
+    spec:
+      chart: immich
+      sourceRef:
+        kind: HelmRepository
+        name: immich-repo
+  interval: 1m
+  install:
+    remediation:
+      retries: 3
+  # Default values
+  values:

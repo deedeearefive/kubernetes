@@ -1,0 +1,17 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: immich-release
+  namespace: immich
+spec:
+  chart:
+    spec:
+      version: ">=0.10.1"
+  values:
+    ingress:
+      enabled: true
+      host: immich.home.local
+      paths:
+      path: /
+      pathType: Prefix

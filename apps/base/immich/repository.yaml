@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: immich-repo
+  namespace: immich
+spec:
+  interval: 1m
+  url: https://ghcr.io/immich-app/immich-charts/immich
