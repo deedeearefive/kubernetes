@@ -31,6 +31,11 @@ spec:
                     name: immich-postgres-user
                     key: DB_PASSWORD
               IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
+    redis:
+      enabled: true
+      architecture: standalone
+      auth:
+        enabled: false
     immich:
       persistence:
         library:
