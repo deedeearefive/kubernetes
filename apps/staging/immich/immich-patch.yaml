@@ -10,8 +10,6 @@ spec:
       version: ">=0.10.1"
   values:
     immich:
-      metrics:
-        enabled: true
       persistence:
         library:
           existingClaim: immich-pvc
