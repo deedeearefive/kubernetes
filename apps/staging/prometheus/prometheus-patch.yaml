@@ -10,6 +10,16 @@ spec:
       version: ">=79.4.1"
   values:
     grafana:
+      adminUser:
+        valueFrom:
+          secretKeyRef:
+            name: prometheus-grafana-admin-user
+            key: user
+      adminPassword:
+        valueFrom:
+          secretKeyRef:
+            name: prometheus-grafana-admin-user
+            key: password
       ingress:
         enabled: true
         hosts:
