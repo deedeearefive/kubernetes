@@ -10,6 +10,16 @@ spec:
       version: ">=79.4.1"
   values:
     grafana:
+      readinessProbe:
+        initialDelaySeconds: 60
+        periodSeconds: 10
+        timeoutSeconds: 5
+        failureThreshold: 10  # More lenient
+      livenessProbe:
+        initialDelaySeconds: 60
+        periodSeconds: 10
+        timeoutSeconds: 5
+        failureThreshold: 10
       admin:
         existingSecret: "prometheus-grafana-admin-user"
         userKey: user
