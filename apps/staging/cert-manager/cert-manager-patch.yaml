@@ -14,3 +14,9 @@ spec:
     prometheus:
       servicemonitor:
         enabled: true
+    webhook:
+      serviceLabels:
+        release: prometheus
+    cainjector:
+      serviceLabels:
+        release: prometheus
