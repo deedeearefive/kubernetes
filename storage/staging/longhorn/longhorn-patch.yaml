@@ -21,6 +21,8 @@ spec:
     metrics:
       serviceMonitor:
         enabled: true
+        additionalLabels:
+          release: prometheus
     ingress:
       enabled: true
       host: longhorn.home.local
