@@ -33,6 +33,8 @@ spec:
                     key: DB_PASSWORD
               IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
     immich:
+      metrics:
+        enabled: true
       persistence:
         library:
           existingClaim: immich-photos
