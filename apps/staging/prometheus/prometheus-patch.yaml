@@ -5,6 +5,9 @@ metadata:
   name: prometheus
   namespace: prometheus
 spec:
+  timeout: 15m
+  install:
+    timeout: 15m
   chart:
     spec:
       version: ">=79.4.1"
