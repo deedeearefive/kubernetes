@@ -9,3 +9,8 @@ spec:
     spec:
       version: ">=0.26.1"
   values:
+    monitoring:
+      podMonitorEnabled: true
+    grafanaDashboard:
+      create: true
+        
