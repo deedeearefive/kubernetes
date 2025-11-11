@@ -4,3 +4,4 @@ metadata:
   name: prometheus
   labels:
     toolkit.fluxcd.io/tenant: dev-team
+    pod-security.kubernetes.io/enforce: privileged
