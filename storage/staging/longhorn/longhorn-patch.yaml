@@ -18,6 +18,9 @@ spec:
     global:
       nodeSelector:
         storage: "longhorn"
+    metrics:
+      serviceMonitor:
+        enabled: true
     ingress:
       enabled: true
       host: longhorn.home.local
