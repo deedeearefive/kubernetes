@@ -3,6 +3,9 @@ kind: Cluster
 metadata:
   name: immich-postgres
   namespace: immich
+  labels:
+    app.kubernetes.io/instance: cloudnative-pg-release
+    app.kubernetes.io/name: cloudnative-pg
 spec:
   #WARNING Be careful with updating image; make sure vchord is <5.0 for Immich compatibility
   imageName: ghcr.io/tensorchord/cloudnative-vectorchord:17-0.4.3
