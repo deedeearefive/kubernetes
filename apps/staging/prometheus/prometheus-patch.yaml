@@ -2,12 +2,12 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: prometheus
+  name: kube-prometheus-stack
   namespace: prometheus
 spec:
   chart:
     spec:
-      version: ">=79.4.0"
+      version: ">=79.4.1"
   values:
     grafana:
       ingress:
