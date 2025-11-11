@@ -23,8 +23,6 @@ spec:
         name: immich-postgres-user
       postInitSQL:
         - CREATE EXTENSION IF NOT EXISTS vchord CASCADE;
-  monitoring:
-    enablePodMonitoring: true
   storage:
     size: 4Gi
     storageClass: longhorn-rc1
