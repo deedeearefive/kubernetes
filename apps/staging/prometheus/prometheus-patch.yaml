@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      version: ">=79.4.1"
+      version: ">=79.4.0"
   values:
     grafana:
       ingress:
