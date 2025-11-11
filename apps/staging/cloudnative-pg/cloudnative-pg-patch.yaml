@@ -11,6 +11,6 @@ spec:
   values:
     monitoring:
       podMonitorEnabled: true
-    grafanaDashboard:
-      create: true
+      grafanaDashboard:
+        create: true
         
