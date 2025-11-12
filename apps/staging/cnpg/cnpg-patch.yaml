@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: cloudnative-pg-release
+  name: cnpg-release
   namespace: cnpg-system
 spec:
   chart:

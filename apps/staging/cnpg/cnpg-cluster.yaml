@@ -1,0 +1,31 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: cnpg-cluster
+  namespace: cnpg-system
+spec:
+  monitoring:
+    enablePodMonitor:
+      enabled: true
+  #WARNING Be careful with updating image; make sure vchord is <5.0 for Immich compatibility
+  imageName: ghcr.io/tensorchord/cloudnative-vectorchord:17-0.4.3
+  instances: 1
+  postgresql:
+    shared_preload_libraries:
+      - "vchord.so"
+  managed:
+    roles:
+      - name: immich
+        superuser: true
+        login: true
+  bootstrap:
+    initdb:
+      database: immich
+      owner: immich
+      secret:
+        name: immich-postgres-user
+      postInitSQL:
+        - CREATE EXTENSION IF NOT EXISTS vchord CASCADE;
+  storage:
+    size: 1Gi
+    storageClass: longhorn-rc1
