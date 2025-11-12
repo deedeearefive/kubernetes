@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: cnpg-system
 resources:
   - ../../base/cnpg
+  - ./cnpg-cluster.yaml
 patches:
   - path: cnpg-patch.yaml
     target:
