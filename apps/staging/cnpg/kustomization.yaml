@@ -4,6 +4,7 @@ namespace: cnpg-system
 resources:
   - ../../base/cnpg
   - ./cnpg-cluster.yaml
+  - ./immich-cnpg-secrets.enc.yaml
 patches:
   - path: cnpg-patch.yaml
     target:
