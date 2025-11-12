@@ -22,7 +22,7 @@ spec:
       database: immich
       owner: immich
       secret:
-        name: immich-postgres-user
+        name: immich-postgres-user-test
       postInitSQL:
         - CREATE EXTENSION IF NOT EXISTS vchord CASCADE;
   storage:
