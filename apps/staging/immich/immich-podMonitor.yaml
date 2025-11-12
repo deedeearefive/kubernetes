@@ -1,0 +1,10 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: immich-cnpg-pod-monitor
+spec:
+  selector:
+    matchLabels:
+      postgresql: immich-postgres
+  podMetricsEndpoints:
+  - port: metrics
