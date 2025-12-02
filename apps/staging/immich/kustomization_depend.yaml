@@ -10,3 +10,4 @@ spec:
   dependsOn:
     - name: prometheus
     - name: cnpg
+    - name: immich_base
