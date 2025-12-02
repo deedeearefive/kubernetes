@@ -6,9 +6,10 @@ namespace: immich
 resources:
   - ../../base/immich
   - ./immich-pvc-photos.yaml
-  - ./immich-cnpg-cluster.yaml
   - ./immich-cnpg-secrets.enc.yaml
 patches:
   - path: immich-patch.yaml
     target:
       kind: HelmRelease
+spec:
+  wait: true
