@@ -4,7 +4,7 @@ metadata:
   name: immich_dependencies
 namespace: immich
 resources:
-  #- ./immich-podMonitor.yaml
+  - ./immich-podMonitor.yaml
   - ./immich-cnpg-cluster.yaml
 spec:
   dependsOn:
