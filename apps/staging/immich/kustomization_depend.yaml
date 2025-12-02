@@ -3,6 +3,8 @@ kind: Kustomization
 namespace: immich
 resources:
   - ./immich-podMonitor.yaml
+  - ./immich-cnpg-cluster.yaml
 spec:
   dependsOn:
     - name: prometheus
+    - name: cnpg
