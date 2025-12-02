@@ -6,7 +6,6 @@ resources:
   - ./immich-pvc-photos.yaml
   - ./immich-cnpg-cluster.yaml
   - ./immich-cnpg-secrets.enc.yaml
-  - ./immich-podMonitor.yaml
 patches:
   - path: immich-patch.yaml
     target:
