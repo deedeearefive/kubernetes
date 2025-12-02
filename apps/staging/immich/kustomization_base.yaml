@@ -11,5 +11,3 @@ patches:
   - path: immich-patch.yaml
     target:
       kind: HelmRelease
-spec:
-  wait: true
