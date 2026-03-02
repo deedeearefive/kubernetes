@@ -28,6 +28,8 @@ spec:
         userKey: user
         passwordKey: password
       ingress:
+        annotations:
+          lbipam.cilium.io/ips: "172.198.1.12"
         enabled: true
         hosts:
           - grafana.home.local
