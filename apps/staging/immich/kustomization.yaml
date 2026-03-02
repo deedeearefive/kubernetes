@@ -1,12 +1,14 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: immich_base
+  name: immich
 namespace: immich
 resources:
   - ../../base/immich
-  - ./immich-pvc-photos.yaml
   - ./immich-cnpg-secrets.enc.yaml
+  - ./immich-podMonitor.yaml
+  - ./immich-cnpg-cluster.yaml
+  - ./immich-pvc-photos.yaml
 patches:
   - path: immich-patch.yaml
     target:
