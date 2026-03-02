@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: openebs
-  labels:
-    toolkit.fluxcd.io/tenant: dev-team
-    # Necessary to allow necessary pod communication in Talos
-    pod-security.kubernetes.io/enforce: privileged
