@@ -30,4 +30,4 @@ spec:
       path: /
       pathType: Prefix
       annotations:
-        - lbipam.cilium.io/ips: 172.198.1.1
+        - lbipam.cilium.io/ips: "172.198.1.10"
