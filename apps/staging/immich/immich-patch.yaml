@@ -42,6 +42,8 @@ spec:
       ingress:
         main:
           enabled: true
+          annotations:
+            lbipam.cilium.io/ips: "172.198.1.11"
           hosts:
             - host: immich.home.local
               paths:
